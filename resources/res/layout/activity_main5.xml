@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#616881" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="22sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="348dp" android:layout_height="44dp" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:text="hitung barangmu" android:textAllCaps="true"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nama Barang :"/>
+        <EditText android:id="@+id/ed1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Harga Barang :"/>
+        <EditText android:id="@+id/ed2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Jumlah Barang :"/>
+        <EditText android:id="@+id/ed3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Subtotal :"/>
+        <EditText android:enabled="false" android:textColor="#070707" android:id="@+id/txtsub" android:background="@drawable/warnanic" android:layout_width="121dp" android:layout_height="wrap_content" android:layout_margin="10sp" android:ems="10"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="286dp" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pembayaran :"/>
+        <EditText android:enabled="true" android:textColor="#070707" android:id="@+id/txtpay" android:background="@drawable/warnanic" android:layout_width="119dp" android:layout_height="wrap_content" android:layout_margin="10sp" android:ems="10" android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="377dp" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/white" android:layout_width="97dp" android:layout_height="wrap_content" android:text="Sisa Pembayaran :"/>
+        <EditText android:enabled="false" android:textColor="#070707" android:id="@+id/txtbal" android:background="@drawable/warnanic" android:layout_width="120dp" android:layout_height="wrap_content" android:layout_margin="10sp" android:ems="10"/>
+        <Button android:id="@+id/btn1" android:background="@drawable/round_primary" android:layout_width="77dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:text=" proses" android:textAlignment="center"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TableLayout android:id="@+id/tbl" android:layout_width="match_parent" android:layout_height="360dp" android:stretchColumns="*">
+            <TableRow android:id="@+id/tbrow1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/t1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nama Barang"/>
+                <TextView android:id="@+id/t2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Harga Barang"/>
+                <TextView android:id="@+id/t3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Jumlah Barang"/>
+                <TextView android:id="@+id/t4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

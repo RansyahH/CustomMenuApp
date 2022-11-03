@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#616881" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TableLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:id="@+id/textView8" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Nama Barang" android:textAlignment="center"/>
+            <TextView android:id="@+id/textView9" android:layout_width="105dp" android:layout_height="wrap_content" android:text="Harga Barang" android:textAlignment="center"/>
+            <TextView android:id="@+id/textView10" android:layout_width="87dp" android:layout_height="wrap_content" android:text="Keterangan" android:textAlignment="center"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </TableLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="18sp" android:textColor="@color/white" android:id="@+id/edit_barang" android:background="#5a73a8" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="10dp" android:layout_marginRight="5dp" android:hint="..." android:layout_weight="1"/>
+        <EditText android:textSize="20sp" android:textColor="@color/white" android:id="@+id/edit_harga" android:background="#5a73a8" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="10dp" android:layout_marginRight="5dp" android:hint="..." android:layout_weight="1" android:inputType="number"/>
+        <FrameLayout android:background="@drawable/round_grey" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatSpinner android:id="@+id/spinner_keterangan" android:background="#5a73a8" android:layout_width="105dp" android:layout_height="40dp"/>
+        </FrameLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/image_remove" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="5dp" android:layout_marginRight="10dp" android:src="@drawable/ic_close"/>
+    </LinearLayout>
+</LinearLayout>

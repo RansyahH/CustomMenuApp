@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#616881" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="23sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Daftar Barangmu" android:textAllCaps="false" android:fontFamily="sans-serif-thin"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:textColor="@color/white" android:id="@+id/button_add" android:background="@drawable/round_primary" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:text="Add" android:drawableRight="@drawable/ic_add" android:textAllCaps="false"/>
+        <Button android:textColor="@color/white" android:id="@+id/button_submit_list" android:background="@drawable/round_primary" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:text="Buat Daftar" android:textAllCaps="false"/>
+    </LinearLayout>
+</ScrollView>

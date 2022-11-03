@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#616881" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" app:cardBackgroundColor="@color/white">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:id="@+id/text_cricketer_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Cricketer Name"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/text_team_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Harga Rp:" android:inputType="number"/>
+        <TextView android:textSize="15sp" android:textStyle="italic" android:textColor="@color/white" android:id="@+id/text_team_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Team Name"/>
+        <TextView android:id="@+id/textView" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="________________________________________________________"/>
+    </LinearLayout>
+</ScrollView>
